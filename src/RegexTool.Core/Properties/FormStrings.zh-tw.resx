@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="STR_ABOUT" xml:space="preserve">
+    <value>關於</value>
+  </data>
+  <data name="STR_BTN_ALLOW_DIGIT_2_NUM" xml:space="preserve">
+    <value>排序時視數位串為數字</value>
+  </data>
+  <data name="STR_BTN_CLEAR" xml:space="preserve">
+    <value>清空</value>
+  </data>
+  <data name="STR_BTN_COLLAPSE" xml:space="preserve">
+    <value>折疊</value>
+  </data>
+  <data name="STR_BTN_DUPLICATED_ONLY" xml:space="preserve">
+    <value>只顯示重複的</value>
+  </data>
+  <data name="STR_BTN_EXPEND" xml:space="preserve">
+    <value>展開</value>
+  </data>
+  <data name="STR_BTN_INGORE_DUPLICATED" xml:space="preserve">
+    <value>排除重複</value>
+  </data>
+  <data name="STR_BTN_SEARCH" xml:space="preserve">
+    <value>查找</value>
+  </data>
+  <data name="STR_CLOSE_PROJECT" xml:space="preserve">
+    <value>關閉專案</value>
+  </data>
+  <data name="STR_EXIT" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="STR_HOMEPAGE" xml:space="preserve">
+    <value>訪問官網</value>
+  </data>
+  <data name="STR_INPUT_LEN" xml:space="preserve">
+    <value>長度: {0}</value>
+  </data>
+  <data name="STR_LBL_ALLOW_EMPTY_REPLACE" xml:space="preserve">
+    <value>允許空替換模式</value>
+  </data>
+  <data name="STR_LBL_BATCH_SEPARATOR" xml:space="preserve">
+    <value>分組分隔符號：</value>
+  </data>
+  <data name="STR_LBL_FILTER" xml:space="preserve">
+    <value>包含：</value>
+  </data>
+  <data name="STR_LBL_LOAD" xml:space="preserve">
+    <value>載入</value>
+  </data>
+  <data name="STR_LBL_REPLACE_PATTERN" xml:space="preserve">
+    <value>替換模式：</value>
+  </data>
+  <data name="STR_LBL_REPLACE_RESULT" xml:space="preserve">
+    <value>替換結果：</value>
+  </data>
+  <data name="STR_LBL_TEMPLATE_RESULT" xml:space="preserve">
+    <value>结果：</value>
+  </data>
+  <data name="STR_MATCH" xml:space="preserve">
+    <value>匹配</value>
+  </data>
+  <data name="STR_MATCH_INFO" xml:space="preserve">
+    <value>{0} 個匹配</value>
+  </data>
+  <data name="STR_MENU_DONATE" xml:space="preserve">
+    <value>捐助與支援本工具</value>
+  </data>
+  <data name="STR_MENU_HELP" xml:space="preserve">
+    <value>帮助</value>
+  </data>
+  <data name="STR_MENU_HOME" xml:space="preserve">
+    <value>功能表</value>
+  </data>
+  <data name="STR_MENU_ITEM_COPY" xml:space="preserve">
+    <value>複製</value>
+  </data>
+  <data name="STR_MENU_ITEM_COPY_ALL" xml:space="preserve">
+    <value>複製所有</value>
+  </data>
+  <data name="STR_MENU_ITEM_COPY_AS_REGEX" xml:space="preserve">
+    <value>複製成正則運算式</value>
+  </data>
+  <data name="STR_MENU_ITEM_CUT" xml:space="preserve">
+    <value>剪切</value>
+  </data>
+  <data name="STR_MENU_ITEM_DELETE" xml:space="preserve">
+    <value>刪除選中文本</value>
+  </data>
+  <data name="STR_MENU_ITEM_PASTE" xml:space="preserve">
+    <value>粘贴</value>
+  </data>
+  <data name="STR_MENU_ITEM_PUT_INTO_REGEX_BOX" xml:space="preserve">
+    <value>轉換並複製至正則輸入框</value>
+  </data>
+  <data name="STR_MENU_ITEM_SAVE" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="STR_MENU_ITEM_SELECTION_ONLY" xml:space="preserve">
+    <value>匹配選中區域</value>
+  </data>
+  <data name="STR_MENU_ITEM_SELECT_ALL" xml:space="preserve">
+    <value>全選</value>
+  </data>
+  <data name="STR_MENU_ITEM_SEND_TO_SOURCE" xml:space="preserve">
+    <value>作為輸入源</value>
+  </data>
+  <data name="STR_MENU_ITEM_TO_REGEX_FORMAT" xml:space="preserve">
+    <value>簡單正則格式化</value>
+  </data>
+  <data name="STR_MENU_ITEM_UNDO" xml:space="preserve">
+    <value>撤銷</value>
+  </data>
+  <data name="STR_MENU_ITEM_WORDWRAP" xml:space="preserve">
+    <value>文本換行</value>
+  </data>
+  <data name="STR_MENU_LANGUAGE" xml:space="preserve">
+    <value>語言</value>
+  </data>
+  <data name="STR_MENU_MISC" xml:space="preserve">
+    <value>其它工具</value>
+  </data>
+  <data name="STR_MENU_NEW_WINDOW" xml:space="preserve">
+    <value>新建窗口</value>
+  </data>
+  <data name="STR_MENU_SETTINGS" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="STR_MENU_SIMPLE_COMPARER" xml:space="preserve">
+    <value>簡易清單比較器</value>
+  </data>
+  <data name="STR_MSG_EMPTY_REGEXEXPRESSION" xml:space="preserve">
+    <value>請輸入正則運算式</value>
+  </data>
+  <data name="STR_NEW_PROJECT" xml:space="preserve">
+    <value>新建專案</value>
+  </data>
+  <data name="STR_ONLINE_DOC" xml:space="preserve">
+    <value>線上說明文檔</value>
+  </data>
+  <data name="STR_OPEN_BROWSER" xml:space="preserve">
+    <value>打開瀏覽器</value>
+  </data>
+  <data name="STR_OPEN_NOTEPAD" xml:space="preserve">
+    <value>打開記事本</value>
+  </data>
+  <data name="STR_OPEN_PROJECT" xml:space="preserve">
+    <value>打開專案</value>
+  </data>
+  <data name="STR_OPTIONS" xml:space="preserve">
+    <value>參數</value>
+  </data>
+  <data name="STR_PAGE_MATCHES" xml:space="preserve">
+    <value>匹配结果</value>
+  </data>
+  <data name="STR_PAGE_REPLACE" xml:space="preserve">
+    <value>替換結果</value>
+  </data>
+  <data name="STR_PAGE_TEMPLATE" xml:space="preserve">
+    <value>範本</value>
+  </data>
+  <data name="STR_RECENT_FILES" xml:space="preserve">
+    <value>最近打開的文檔</value>
+  </data>
+  <data name="STR_RECENT_FILE_NOT_FOUND" xml:space="preserve">
+    <value>File Not found, do you want to delete the recent file?</value>
+  </data>
+  <data name="STR_RECENT_PROJECTS" xml:space="preserve">
+    <value>最近打開的專案</value>
+  </data>
+  <data name="STR_SAVE_PROJECT" xml:space="preserve">
+    <value>保存專案</value>
+  </data>
+  <data name="STR_STOP" xml:space="preserve">
+    <value>中止</value>
+  </data>
+  <data name="STR_TEXT_SAVE_FILTER" xml:space="preserve">
+    <value>text file(*.txt)|*.txt|xml files(*.xml)|*.xml|sql files(*.sql)|*.sql|All file(*.*)|*.*</value>
+  </data>
+  <data name="STR_TIP_ITEMS_PER_BATCH" xml:space="preserve">
+    <value>指定範本結果以N個為一組</value>
+  </data>
+  <data name="STR_TIP_ORDER_BY" xml:space="preserve">
+    <value>按指定的分组排序</value>
+  </data>
+  <data name="STR_TITLE_SAVE_PROJECT" xml:space="preserve">
+    <value>保存專案</value>
+  </data>
+  <data name="STR_TITLE_SAVE_PROJECT_AS" xml:space="preserve">
+    <value>專案另存為</value>
+  </data>
+  <data name="STR_TITLE_WARNNING" xml:space="preserve">
+    <value>警告</value>
+  </data>
+  <data name="STR_TREEVIEW_NODE_CAPTURE" xml:space="preserve">
+    <value>捕獲 {0}: {1}</value>
+  </data>
+  <data name="STR_TREEVIEW_NODE_GROUP" xml:space="preserve">
+    <value>分组 {0}: {1}</value>
+  </data>
+  <data name="STR_TREEVIEW_NODE_MATCH" xml:space="preserve">
+    <value>匹配-{0}: {1}</value>
+  </data>
+  <data name="STR_UNTITLED_PROJECT" xml:space="preserve">
+    <value>未命名專案</value>
+  </data>
+  <data name="TIP_CB_FILTER_AS_REGEX" xml:space="preserve">
+    <value>使用正則運算式</value>
+  </data>
+  <data name="TIP_CB_FILTER_WHOLEWORD" xml:space="preserve">
+    <value>内容全部匹配</value>
+  </data>
+  <data name="TIP_REGEX_ANY" xml:space="preserve">
+    <value>比對上一個項目零次或多次。</value>
+  </data>
+  <data name="TIP_REGEX_BORDER" xml:space="preserve">
+    <value>在字元類別中，比對退格鍵 \u0008。</value>
+  </data>
+  <data name="TIP_REGEX_CHAR_GROUP" xml:space="preserve">
+    <value>比對 character_group 中的任何單一字元。  根據預設，比對會區分大小寫。</value>
+  </data>
+  <data name="TIP_REGEX_DIGIT" xml:space="preserve">
+    <value>比對任何十進位數字。</value>
+  </data>
+  <data name="TIP_REGEX_GROUP" xml:space="preserve">
+    <value>擷取符合的子運算式，並指派以零為起始的序號給它。</value>
+  </data>
+  <data name="TIP_REGEX_MANY" xml:space="preserve">
+    <value>比對上一個項目一次或多次。</value>
+  </data>
+  <data name="TIP_REGEX_M_TIMES" xml:space="preserve">
+    <value>比對上一個項目剛好 m 次。</value>
+  </data>
+  <data name="TIP_REGEX_NONE_OR_ONE" xml:space="preserve">
+    <value>比對上一個項目零次或一次。</value>
+  </data>
+  <data name="TIP_REGEX_ONELINE_DOC" xml:space="preserve">
+    <value>正則運算式MSDN説明</value>
+  </data>
+  <data name="TIP_REGEX_OR" xml:space="preserve">
+    <value>比對由分隔號 (|) 字元所隔開的任何一個項目。</value>
+  </data>
+  <data name="TIP_REGEX_RETURN" xml:space="preserve">
+    <value>比對新行字元 \u000D\u000A。</value>
+  </data>
+  <data name="TIP_REGEX_SPACE" xml:space="preserve">
+    <value>比對任何泛空白字元。</value>
+  </data>
+  <data name="TIP_REGEX_START" xml:space="preserve">
+    <value>必須從字串開頭或行首來開始比對。</value>
+  </data>
+  <data name="TIP_REGEX_TAB" xml:space="preserve">
+    <value>比對定位點 \u0009。</value>
+  </data>
+  <data name="TIP_REGEX_WILDCARD" xml:space="preserve">
+    <value>萬用字元：比對除 \n 以外的任何單一字元。  
+
+比對 literal period character (。  或 \u002E），你必須在前方放置跳脫字元(\.)</value>
+  </data>
+  <data name="TIP_REGEX_WORD" xml:space="preserve">
+    <value>比對任何文字字元。</value>
+  </data>
+  <data name="TIP_ROWNUMBER" xml:space="preserve">
+    <value>行號</value>
+  </data>
+</root>

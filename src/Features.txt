@@ -1,0 +1,30 @@
+
+1. Match
+1.1 [Removed] Highlight the selected matched item 
+1.2 Filter matched result and highlight the matched items filtered by search string
+1.3 Regex buttons that help user to use mouse rather than by key strokes(Ctrl,Shift,Alt and right button of mouse)
+2. Replace
+   option: allow empty replacement
+   Multiple replace: todo
+3. Template
+   option: remove duplicated, show duplicated only, show duplicated number
+   Remove duplicate result
+   Order by specific group and automatically tread the group as an number if possible
+4. Save all files
+5. Open /Save regex full information
+6. Upgrade
+7. Donate
+8. Help document, online
+8.1.
+8.2. [DONE] Regular Expression online document with different language.
+9. Recent files
+10. Recnet projects
+11. Performance, multithread!!!
+12. Globalization
+
+
+-- --------------------------------------------------------------------------
+Feature Requirements
+1. CTRL + F : find
+
+

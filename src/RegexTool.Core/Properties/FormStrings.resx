@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="STR_ABOUT" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="STR_BTN_ALLOW_DIGIT_2_NUM" xml:space="preserve">
+    <value>Treat digit string as numbers for sort</value>
+  </data>
+  <data name="STR_BTN_CLEAR" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="STR_BTN_COLLAPSE" xml:space="preserve">
+    <value>Collapse</value>
+  </data>
+  <data name="STR_BTN_DUPLICATED_ONLY" xml:space="preserve">
+    <value>Show duplicated only</value>
+  </data>
+  <data name="STR_BTN_EXPEND" xml:space="preserve">
+    <value>Expend</value>
+  </data>
+  <data name="STR_BTN_INGORE_DUPLICATED" xml:space="preserve">
+    <value>Ingore duplicated</value>
+  </data>
+  <data name="STR_BTN_SEARCH" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="STR_CLOSE_PROJECT" xml:space="preserve">
+    <value>Close Project</value>
+  </data>
+  <data name="STR_EXIT" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="STR_HOMEPAGE" xml:space="preserve">
+    <value>Home Page</value>
+  </data>
+  <data name="STR_INPUT_LEN" xml:space="preserve">
+    <value>Length: {0}</value>
+  </data>
+  <data name="STR_LBL_ALLOW_EMPTY_REPLACE" xml:space="preserve">
+    <value>Allow empty replace pattern</value>
+  </data>
+  <data name="STR_LBL_BATCH_SEPARATOR" xml:space="preserve">
+    <value>Batch Separator:</value>
+  </data>
+  <data name="STR_LBL_FILTER" xml:space="preserve">
+    <value>Filter:</value>
+  </data>
+  <data name="STR_LBL_LOAD" xml:space="preserve">
+    <value>Load</value>
+  </data>
+  <data name="STR_LBL_REPLACE_PATTERN" xml:space="preserve">
+    <value>Replace Pattern:</value>
+  </data>
+  <data name="STR_LBL_REPLACE_RESULT" xml:space="preserve">
+    <value>Replace Result:</value>
+  </data>
+  <data name="STR_LBL_TEMPLATE_RESULT" xml:space="preserve">
+    <value>Result:</value>
+  </data>
+  <data name="STR_MATCH" xml:space="preserve">
+    <value>Match</value>
+  </data>
+  <data name="STR_MATCH_INFO" xml:space="preserve">
+    <value>{0} Matches</value>
+  </data>
+  <data name="STR_MENU_DONATE" xml:space="preserve">
+    <value>Donate</value>
+  </data>
+  <data name="STR_MENU_HELP" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="STR_MENU_HOME" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="STR_MENU_ITEM_CLEAR" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="STR_MENU_ITEM_COPY" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="STR_MENU_ITEM_COPY_ALL" xml:space="preserve">
+    <value>Copy All</value>
+  </data>
+  <data name="STR_MENU_ITEM_COPY_AS_REGEX" xml:space="preserve">
+    <value>Copy as Regular Expression</value>
+  </data>
+  <data name="STR_MENU_ITEM_CUT" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="STR_MENU_ITEM_DELETE" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="STR_MENU_ITEM_PASTE" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="STR_MENU_ITEM_PUT_INTO_REGEX_BOX" xml:space="preserve">
+    <value>Copy as Regular Expression input</value>
+  </data>
+  <data name="STR_MENU_ITEM_SAVE" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="STR_MENU_ITEM_SELECTION_ONLY" xml:space="preserve">
+    <value>Match on selection Only</value>
+  </data>
+  <data name="STR_MENU_ITEM_SELECT_ALL" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="STR_MENU_ITEM_SEND_TO_SOURCE" xml:space="preserve">
+    <value>Send to source</value>
+  </data>
+  <data name="STR_MENU_ITEM_TO_REGEX_FORMAT" xml:space="preserve">
+    <value>Format as Regular Expression</value>
+  </data>
+  <data name="STR_MENU_ITEM_UNDO" xml:space="preserve">
+    <value>Undo</value>
+  </data>
+  <data name="STR_MENU_ITEM_WORDWRAP" xml:space="preserve">
+    <value>WordWrap</value>
+  </data>
+  <data name="STR_MENU_LANGUAGE" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="STR_MENU_MISC" xml:space="preserve">
+    <value>Misc</value>
+  </data>
+  <data name="STR_MENU_NEW_WINDOW" xml:space="preserve">
+    <value>New Window</value>
+  </data>
+  <data name="STR_MENU_SETTINGS" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="STR_MENU_SIMPLE_COMPARER" xml:space="preserve">
+    <value>Simple List Comparer</value>
+  </data>
+  <data name="STR_MSG_EMPTY_REGEXEXPRESSION" xml:space="preserve">
+    <value>Please input regular expression</value>
+  </data>
+  <data name="STR_NEW_PROJECT" xml:space="preserve">
+    <value>New Project</value>
+  </data>
+  <data name="STR_ONLINE_DOC" xml:space="preserve">
+    <value>Online Document</value>
+  </data>
+  <data name="STR_OPEN_BROWSER" xml:space="preserve">
+    <value>Open Internet Explorer</value>
+  </data>
+  <data name="STR_OPEN_NOTEPAD" xml:space="preserve">
+    <value>Open Notepad</value>
+  </data>
+  <data name="STR_OPEN_PROJECT" xml:space="preserve">
+    <value>Open Project</value>
+  </data>
+  <data name="STR_OPTIONS" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="STR_PAGE_MATCHES" xml:space="preserve">
+    <value>Matches</value>
+  </data>
+  <data name="STR_PAGE_REPLACE" xml:space="preserve">
+    <value>Replace</value>
+  </data>
+  <data name="STR_PAGE_TEMPLATE" xml:space="preserve">
+    <value>Template</value>
+  </data>
+  <data name="STR_RECENT_FILES" xml:space="preserve">
+    <value>Recent Files</value>
+  </data>
+  <data name="STR_RECENT_FILE_NOT_FOUND" xml:space="preserve">
+    <value>File Not found, do you want to delete the recent file?</value>
+  </data>
+  <data name="STR_RECENT_PROJECTS" xml:space="preserve">
+    <value>Recent Projects</value>
+  </data>
+  <data name="STR_SAVE_PROJECT" xml:space="preserve">
+    <value>Save Project</value>
+  </data>
+  <data name="STR_STOP" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="STR_TEXT_SAVE_FILTER" xml:space="preserve">
+    <value>text file(*.txt)|*.txt|xml files(*.xml)|*.xml|sql files(*.sql)|*.sql|All file(*.*)|*.*</value>
+  </data>
+  <data name="STR_TIP_ITEMS_PER_BATCH" xml:space="preserve">
+    <value>Set the items count per batch</value>
+  </data>
+  <data name="STR_TIP_ORDER_BY" xml:space="preserve">
+    <value>Order by the specific group</value>
+  </data>
+  <data name="STR_TITLE_SAVE_PROJECT" xml:space="preserve">
+    <value>Save Project</value>
+  </data>
+  <data name="STR_TITLE_SAVE_PROJECT_AS" xml:space="preserve">
+    <value>Save Project As ...</value>
+  </data>
+  <data name="STR_TITLE_WARNNING" xml:space="preserve">
+    <value>Warnning</value>
+  </data>
+  <data name="STR_TREEVIEW_NODE_CAPTURE" xml:space="preserve">
+    <value>Capture {0}: {1}</value>
+  </data>
+  <data name="STR_TREEVIEW_NODE_GROUP" xml:space="preserve">
+    <value>Group {0}: {1}</value>
+  </data>
+  <data name="STR_TREEVIEW_NODE_MATCH" xml:space="preserve">
+    <value>Match-{0}: {1}</value>
+  </data>
+  <data name="STR_UNTITLED_PROJECT" xml:space="preserve">
+    <value>Untitled Project</value>
+  </data>
+  <data name="TIP_CB_FILTER_AS_REGEX" xml:space="preserve">
+    <value>Use regular expression</value>
+  </data>
+  <data name="TIP_CB_FILTER_WHOLEWORD" xml:space="preserve">
+    <value>Match whole</value>
+  </data>
+  <data name="TIP_REGEX_ANY" xml:space="preserve">
+    <value>Any (0 or more). Press ALT for *?</value>
+  </data>
+  <data name="TIP_REGEX_BORDER" xml:space="preserve">
+    <value>You can click it with Shift, Ctrl or Alt key.</value>
+  </data>
+  <data name="TIP_REGEX_CHAR_GROUP" xml:space="preserve">
+    <value>character group, right click to define any single character that is not in character_group. By default, characters in character_group are case-sensitive.</value>
+  </data>
+  <data name="TIP_REGEX_DIGIT" xml:space="preserve">
+    <value>Matches any decimal digit. Press Ctrl for \d+, Shift for \d*, Alt for \d?</value>
+  </data>
+  <data name="TIP_REGEX_GROUP" xml:space="preserve">
+    <value>group the selected text. Right click to define an uncapturing group.</value>
+  </data>
+  <data name="TIP_REGEX_MANY" xml:space="preserve">
+    <value>Many (1 or more). Press ALT for +?</value>
+  </data>
+  <data name="TIP_REGEX_M_TIMES" xml:space="preserve">
+    <value>Matches the previous element exactly m times: {m}, or not more than n {m,n}.</value>
+  </data>
+  <data name="TIP_REGEX_NONE_OR_ONE" xml:space="preserve">
+    <value>0 or 1</value>
+  </data>
+  <data name="TIP_REGEX_ONELINE_DOC" xml:space="preserve">
+    <value>Online Document about Regular Expressions</value>
+  </data>
+  <data name="TIP_REGEX_OR" xml:space="preserve">
+    <value>Matches any one element separated by the vertical bar (|) character. For example: th(e|is|at)</value>
+  </data>
+  <data name="TIP_REGEX_RETURN" xml:space="preserve">
+    <value>Match a new line. You can click it with Shift, Ctrl or Alt key.</value>
+  </data>
+  <data name="TIP_REGEX_SPACE" xml:space="preserve">
+    <value>Matches any white-space character. Press Ctrl for \s+, Shift for \s*, Alt for \s?</value>
+  </data>
+  <data name="TIP_REGEX_START" xml:space="preserve">
+    <value>The match must start at the beginning of the string or line. Right click for $, The match must occur at the end of the string or before \n at the end of the line or string.</value>
+  </data>
+  <data name="TIP_REGEX_TAB" xml:space="preserve">
+    <value>Match a tab. You can click it with Shift, Ctrl or Alt key.</value>
+  </data>
+  <data name="TIP_REGEX_WILDCARD" xml:space="preserve">
+    <value>Wildcard: Matches any single character except \n. To match a literal period character (. or \u002E), you must precede it with the escape character (\.).</value>
+  </data>
+  <data name="TIP_REGEX_WORD" xml:space="preserve">
+    <value>Matches any word character. Press Ctrl for \w+, Shift for \w*, Alt for \w?</value>
+  </data>
+  <data name="TIP_ROWNUMBER" xml:space="preserve">
+    <value>Row Number</value>
+  </data>
+</root>

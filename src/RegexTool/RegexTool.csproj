@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2B4480C2-D4DA-4F13-B42E-F354F2E7159D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RegexTool</RootNamespace>
+    <AssemblyName>RegexTool</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;INIT_TEST_DATA</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icons\RE32x32.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutMe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutMe.Designer.cs">
+      <DependentUpon>AboutMe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlHelper.cs" />
+    <Compile Include="ISetUserInterfaceTexts.cs" />
+    <Compile Include="ITextProvider.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocationInfo.cs" />
+    <Compile Include="Pages\AdPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\AdPage.Designer.cs">
+      <DependentUpon>AdPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\HistoryPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\HistoryPage.Designer.cs">
+      <DependentUpon>HistoryPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MatchResultPage2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\ReplacePage2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\MatchResultPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\MatchResultPage.Designer.cs">
+      <DependentUpon>MatchResultPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ReplacePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\ReplacePage.Designer.cs">
+      <DependentUpon>ReplacePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ResultBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\ResultBar.Designer.cs">
+      <DependentUpon>ResultBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TemplatePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\TemplatePage.Designer.cs">
+      <DependentUpon>TemplatePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TemplatePage2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegexBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RegexBar.Designer.cs">
+      <DependentUpon>RegexBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RichTextBoxExt.cs" />
+    <Compile Include="SaveFileName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaveFileName.Designer.cs">
+      <DependentUpon>SaveFileName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SmartTabControl.cs" />
+    <Compile Include="SourceBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SourceBar.Designer.cs">
+      <DependentUpon>SourceBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolBody.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ToolBody.Designer.cs">
+      <DependentUpon>ToolBody.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolBodyLeft.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ToolBodyLeft.Designer.cs">
+      <DependentUpon>ToolBodyLeft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolBodyRight.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ToolBodyRight.Designer.cs">
+      <DependentUpon>ToolBodyRight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIManager.cs" />
+    <Compile Include="UpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateForm.Designer.cs">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WMHelper.cs" />
+    <EmbeddedResource Include="AboutMe.resx">
+      <DependentUpon>AboutMe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\AdPage.resx">
+      <DependentUpon>AdPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\HistoryPage.resx">
+      <DependentUpon>HistoryPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\MatchResultPage.resx">
+      <DependentUpon>MatchResultPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\ReplacePage.resx">
+      <DependentUpon>ReplacePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\ResultBar.resx">
+      <DependentUpon>ResultBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\TemplatePage.resx">
+      <DependentUpon>TemplatePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegexBar.resx">
+      <DependentUpon>RegexBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaveFileName.resx">
+      <DependentUpon>SaveFileName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartTabControl.resx">
+      <DependentUpon>SmartTabControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SourceBar.resx">
+      <DependentUpon>SourceBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolBody.resx">
+      <DependentUpon>ToolBody.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolBodyLeft.resx">
+      <DependentUpon>ToolBodyLeft.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolBodyRight.resx">
+      <DependentUpon>ToolBodyRight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateForm.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cut16.ico" />
+    <None Include="Resources\copy16.ico" />
+    <None Include="Resources\save16.ico" />
+    <None Include="Resources\Icon1.ico" />
+    <None Include="icons\cut16.ico" />
+    <None Include="icons\RE16x16.ico" />
+    <None Include="icons\RE32x32.ico" />
+    <Content Include="thirdparty\ExpTab.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RegexTool.Core\RegexTool.Core.csproj">
+      <Project>{BE6ED5CC-A7BE-4C4B-9B18-68677256A61E}</Project>
+      <Name>RegexTool.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ToolPages\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
