@@ -47,6 +47,7 @@ namespace RegexTool.SimpleComparer
 
             var r1 = a1.Except(a2, StringComparer.CurrentCultureIgnoreCase);
             var r2 = a2.Except(a1, StringComparer.CurrentCultureIgnoreCase);
+            var rIntersetcted = a1.Intersect(a2);
 
             foreach (var item in r1)
             {
@@ -58,23 +59,18 @@ namespace RegexTool.SimpleComparer
                 txtResultRNL.AppendText(item);
                 txtResultRNL.AppendText(Environment.NewLine);
             }
+            foreach (var item in rIntersetcted)
+            {
+                txtIntersected.AppendText(item);
+                txtIntersected.AppendText(Environment.NewLine);
+            }
 
             var r1c = r1.Count();
             var r2c = r2.Count();
 
-            if (r1c == 0 && r2c == 0)
-            {
-                string s = string.Format("Got {0} items in left, and {1} items in right. " +
-                    "And match!", a1.Count, a2.Count);
-                lblResult.Text = s;
-            }
-            else
-            {
-                string s = string.Format("Got {0} items in left, and {1} items in right. " +
-                    "There are {2} items not in right and {3} items not in left.",
-                    a1.Count, a2.Count, r1c, r2c);
-                lblResult.Text = s;
-            }
+            string s = string.Format("{0} : {1} >> {2} (Matched: {3}) {4}", a1.Count, a2.Count,
+                r1.Count(), rIntersetcted.Count(), r2.Count());
+            lblResult.Text = s;
 
             if (r1c > 0) tbCompareResult.SelectedTab = tabPage1;
             else if (r2c > 0) tbCompareResult.SelectedTab = tabPage2;
