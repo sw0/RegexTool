@@ -27,6 +27,14 @@ namespace RegexTool.SimpleComparer
                  TextContextMenuType.SimpleText | TextContextMenuType.SaveContent);
         }
 
+        public string SourceFileOrUrl
+        {
+            get
+            {
+                return txtSource.Text;
+            }
+        }
+
         public bool HasContent()
         {
             return this.txtInput.Text.Length > 0;

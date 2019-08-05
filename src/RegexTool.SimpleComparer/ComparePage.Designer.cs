@@ -31,8 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.scVertical = new System.Windows.Forms.SplitContainer();
             this.spHoriz = new System.Windows.Forms.SplitContainer();
-            this.compareItem1 = new RegexTool.SimpleComparer.CompareItem();
-            this.compareItem2 = new RegexTool.SimpleComparer.CompareItem();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tbCompareResult = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -41,10 +39,13 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.txtResultRNL = new System.Windows.Forms.TextBox();
             this.cmsRNL = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.btnCompare = new System.Windows.Forms.Button();
             this.lblResult = new System.Windows.Forms.Label();
             this.tabIntersected = new System.Windows.Forms.TabPage();
             this.txtIntersected = new System.Windows.Forms.TextBox();
+            this.compareItem1 = new RegexTool.SimpleComparer.CompareItem();
+            this.compareItem2 = new RegexTool.SimpleComparer.CompareItem();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.scVertical)).BeginInit();
             this.scVertical.Panel1.SuspendLayout();
             this.scVertical.Panel2.SuspendLayout();
@@ -98,39 +99,24 @@
             this.spHoriz.SplitterDistance = 253;
             this.spHoriz.TabIndex = 1;
             // 
-            // compareItem1
-            // 
-            this.compareItem1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.compareItem1.Location = new System.Drawing.Point(0, 0);
-            this.compareItem1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.compareItem1.Name = "compareItem1";
-            this.compareItem1.Size = new System.Drawing.Size(253, 321);
-            this.compareItem1.TabIndex = 0;
-            // 
-            // compareItem2
-            // 
-            this.compareItem2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.compareItem2.Location = new System.Drawing.Point(0, 0);
-            this.compareItem2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.compareItem2.Name = "compareItem2";
-            this.compareItem2.Size = new System.Drawing.Size(255, 321);
-            this.compareItem2.TabIndex = 0;
-            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.tbCompareResult, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.btnCompare, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.lblResult, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.tbCompareResult, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.lblResult, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.button1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.button2, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableLayoutPanel1.RowCount = 5;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(512, 147);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
@@ -140,11 +126,11 @@
             this.tbCompareResult.Controls.Add(this.tabIntersected);
             this.tbCompareResult.Controls.Add(this.tabPage2);
             this.tbCompareResult.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbCompareResult.Location = new System.Drawing.Point(2, 26);
+            this.tbCompareResult.Location = new System.Drawing.Point(2, 62);
             this.tbCompareResult.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbCompareResult.Name = "tbCompareResult";
             this.tbCompareResult.SelectedIndex = 0;
-            this.tbCompareResult.Size = new System.Drawing.Size(508, 103);
+            this.tbCompareResult.Size = new System.Drawing.Size(508, 47);
             this.tbCompareResult.TabIndex = 0;
             // 
             // tabPage1
@@ -154,7 +140,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage1.Size = new System.Drawing.Size(500, 77);
+            this.tabPage1.Size = new System.Drawing.Size(500, 21);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "In Left but not in Right";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -167,7 +153,7 @@
             this.txtResultLNR.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtResultLNR.Multiline = true;
             this.txtResultLNR.Name = "txtResultLNR";
-            this.txtResultLNR.Size = new System.Drawing.Size(496, 73);
+            this.txtResultLNR.Size = new System.Drawing.Size(496, 17);
             this.txtResultLNR.TabIndex = 1;
             // 
             // cmsLNR
@@ -203,21 +189,10 @@
             this.cmsRNL.Name = "contextMenuStrip1";
             this.cmsRNL.Size = new System.Drawing.Size(61, 4);
             // 
-            // btnCompare
-            // 
-            this.btnCompare.Location = new System.Drawing.Point(2, 2);
-            this.btnCompare.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnCompare.Name = "btnCompare";
-            this.btnCompare.Size = new System.Drawing.Size(78, 19);
-            this.btnCompare.TabIndex = 1;
-            this.btnCompare.Text = "Compare";
-            this.btnCompare.UseVisualStyleBackColor = true;
-            this.btnCompare.Click += new System.EventHandler(this.btnCompare_Click);
-            // 
             // lblResult
             // 
             this.lblResult.AutoSize = true;
-            this.lblResult.Location = new System.Drawing.Point(2, 131);
+            this.lblResult.Location = new System.Drawing.Point(2, 111);
             this.lblResult.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblResult.Name = "lblResult";
             this.lblResult.Size = new System.Drawing.Size(35, 13);
@@ -244,6 +219,45 @@
             this.txtIntersected.Name = "txtIntersected";
             this.txtIntersected.Size = new System.Drawing.Size(500, 77);
             this.txtIntersected.TabIndex = 1;
+            // 
+            // compareItem1
+            // 
+            this.compareItem1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.compareItem1.Location = new System.Drawing.Point(0, 0);
+            this.compareItem1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.compareItem1.Name = "compareItem1";
+            this.compareItem1.Size = new System.Drawing.Size(253, 321);
+            this.compareItem1.TabIndex = 0;
+            // 
+            // compareItem2
+            // 
+            this.compareItem2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.compareItem2.Location = new System.Drawing.Point(0, 0);
+            this.compareItem2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.compareItem2.Name = "compareItem2";
+            this.compareItem2.Size = new System.Drawing.Size(255, 321);
+            this.compareItem2.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(78, 24);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Compare";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(2, 32);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(264, 24);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "Compare without loading files/pages";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.btnCompare_Click);
             // 
             // ComparePage
             // 
@@ -284,7 +298,6 @@
         private System.Windows.Forms.TabControl tbCompareResult;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button btnCompare;
         private System.Windows.Forms.TextBox txtResultRNL;
         private System.Windows.Forms.TextBox txtResultLNR;
         private System.Windows.Forms.Label lblResult;
@@ -292,5 +305,7 @@
         private System.Windows.Forms.ContextMenuStrip cmsRNL;
         private System.Windows.Forms.TabPage tabIntersected;
         private System.Windows.Forms.TextBox txtIntersected;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

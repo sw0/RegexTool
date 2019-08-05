@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -33,21 +34,39 @@ namespace RegexTool.SimpleComparer
 
         private void btnCompare_Click(object sender, EventArgs e)
         {
-            if (false == compareItem1.HasContent() || false == compareItem2.HasContent())
+            List<string> a1, a2;
+            if (((Button)sender).Text.Contains("without loading"))
             {
-                lblResult.Text = "No data to compare.";
-                return;
+                try
+                {
+                    a1 = File.ReadAllLines(compareItem1.SourceFileOrUrl).ToList();
+                    a2 = File.ReadAllLines(compareItem2.SourceFileOrUrl).ToList();
+                }
+                catch (Exception ex)
+                {
+                    lblResult.Text = "failed when opening files: " + ex.Message;
+                    return;
+                }
             }
-            txtResultLNR.Clear();
-            txtResultRNL.Clear();
+            else
+            {
+                if (false == compareItem1.HasContent() || false == compareItem2.HasContent())
+                {
+                    lblResult.Text = "No data to compare.";
+                    return;
+                }
 
-            lblResult.Text = "Please click Compare button to compare the list.";
-            var a1 = this.compareItem1.GetItems();
-            var a2 = this.compareItem2.GetItems();
+                txtResultLNR.Clear();
+                txtResultRNL.Clear();
 
-            var r1 = a1.Except(a2, StringComparer.CurrentCultureIgnoreCase);
-            var r2 = a2.Except(a1, StringComparer.CurrentCultureIgnoreCase);
-            var rIntersetcted = a1.Intersect(a2);
+                lblResult.Text = "Please click Compare button to compare the list.";
+                a1 = this.compareItem1.GetItems();
+                a2 = this.compareItem2.GetItems();
+            }
+
+            var r1 = a1.Except(a2, StringComparer.CurrentCultureIgnoreCase).Where(str => str != string.Empty).ToList();
+            var r2 = a2.Except(a1, StringComparer.CurrentCultureIgnoreCase).Where(str => str != string.Empty).ToList();
+            var rIntersected = a1.Intersect(a2).ToList();
 
             foreach (var item in r1)
             {
@@ -59,7 +78,7 @@ namespace RegexTool.SimpleComparer
                 txtResultRNL.AppendText(item);
                 txtResultRNL.AppendText(Environment.NewLine);
             }
-            foreach (var item in rIntersetcted)
+            foreach (var item in rIntersected)
             {
                 txtIntersected.AppendText(item);
                 txtIntersected.AppendText(Environment.NewLine);
@@ -69,7 +88,7 @@ namespace RegexTool.SimpleComparer
             var r2c = r2.Count();
 
             string s = string.Format("{0} : {1} >> {2} (Matched: {3}) {4}", a1.Count, a2.Count,
-                r1.Count(), rIntersetcted.Count(), r2.Count());
+                r1.Count(), rIntersected.Count(), r2.Count());
             lblResult.Text = s;
 
             if (r1c > 0) tbCompareResult.SelectedTab = tabPage1;
